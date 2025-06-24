@@ -1,0 +1,18 @@
+__pycache__
+.env
+.learn
+
+#Entorno virtual
+env/
+!data/
+!data/**
+
+!/.gitignore  # Opcional, para que el .gitignore dentro de /data no se ignore si lo creas
+
+# Asegura que no se suban datasets pesados, imágenes o etiquetas generadas
+/src/*
+!/src/app/
+!/src/explore/
+
+# Excepciones opcionales: si quieres mantener estructura
+!/data/.keep  # Puedes crear un archivo vacío para conservar la carpeta
