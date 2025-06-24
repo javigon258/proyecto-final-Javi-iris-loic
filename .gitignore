@@ -4,8 +4,8 @@ __pycache__
 
 #Entorno virtual
 env/
-!data/
-!data/**
+data/*
+data/data_streamlit_titles.csv
 
 !/.gitignore  # Opcional, para que el .gitignore dentro de /data no se ignore si lo creas
 
