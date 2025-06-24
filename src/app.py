@@ -5,8 +5,15 @@ from scipy.sparse import hstack, csr_matrix, load_npz
 from sklearn.neighbors import NearestNeighbors
 import ast
 import spacy
+import subprocess
+import sys
 
-nlp = spacy.load("en_core_web_sm", disable=["parser", "ner"])
+try:
+    nlp = spacy.load("en_core_web_sm", disable=["parser", "ner"])
+except OSError:
+    subprocess.run([sys.executable, "-m", "spacy", "download", "en_core_web_sm"])
+    nlp = spacy.load("en_core_web_sm", disable=["parser", "ner"])
+# ...resto de tu código...
 
 def clean_text_spacy(text, pos_tags):
     doc = nlp(text.lower())
