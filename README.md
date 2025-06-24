@@ -4,6 +4,8 @@ My virtual environment is: .\env\Scripts\activate.bat
 
 pip install -r requirements.txt
 
+Installed libraries in notebook: python -m spacy download en_core_web_sm
+
 # Using Git LFS
 
 Git LFS allows you to upload large files,  

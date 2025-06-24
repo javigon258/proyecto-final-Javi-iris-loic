@@ -4,6 +4,8 @@ Mi entorno virtual es: .\env\Scripts\activate.bat
 
 pip install -r requirements.txt
 
+Librerias instaladas en notebook: python -m spacy download en_core_web_sm
+
 # Usar Git LFS
 
 Git LFS permite subir archivos grandes, 
