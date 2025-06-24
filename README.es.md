@@ -13,9 +13,15 @@ pero requiere configuración especial
 y los usuarios que clonen el repo también deben instalarlo
 
 git lfs install
+
 git lfs track "*.csv"
+
 git lfs track "*.pkl"
+
 git add .gitattributes
+
 git add data/*.csv models/*.pkl
+
 git commit -m "Agregar archivos grandes con Git LFS"
+
 git push origin main
